@@ -57,5 +57,19 @@ def main():
     trainer.resume_or_load(resume=False)
     trainer.train()
 
+    # --- Évaluation automatique détaillée ---
+    print("\nÉvaluation du modèle sur le jeu de validation...")
+    from detectron2.evaluation import COCOEvaluator, inference_on_dataset
+    from detectron2.data import build_detection_test_loader
+
+    evaluator = COCOEvaluator("plan_val", output_dir=cfg.OUTPUT_DIR)
+    val_loader = build_detection_test_loader(cfg, "plan_val")
+    eval_results = inference_on_dataset(trainer.model, val_loader, evaluator)
+    print("\n===== Résultats de l'évaluation COCO =====")
+    print(eval_results)
+    # Sauvegarde dans un fichier pour consultation ultérieure
+    with open(os.path.join(cfg.OUTPUT_DIR, "eval_results.json"), "w") as f:
+        json.dump(eval_results, f, indent=2, ensure_ascii=False)
+
 if __name__ == "__main__":
     main()
