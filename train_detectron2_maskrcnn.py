@@ -16,9 +16,21 @@ def main():
     train_imgs = data_dir
     val_imgs = data_dir
     output_dir = "output_detectron2"
-    num_classes = 1  # change if you have more categories
+    num_classes = 7  # 7 catégories dans le COCO
     batch_size = 2
     max_iter = 3000  # adjust for your dataset
+
+    # Calcul et affichage du nombre d'epochs
+    with open(train_json, 'r') as f:
+        coco = json.load(f)
+    nb_images_train = len(coco['images'])
+    iters_per_epoch = nb_images_train // batch_size
+    nb_epochs = max_iter / iters_per_epoch if iters_per_epoch else 0
+    print(f"Nombre d'images d'entraînement : {nb_images_train}")
+    print(f"Batch size : {batch_size}")
+    print(f"MAX_ITER : {max_iter}")
+    print(f"Itérations par epoch : {iters_per_epoch}")
+    print(f"Nombre d'epochs estimé : {nb_epochs:.2f}")
 
     # Register datasets
     register_coco_instances("plan_train", {}, train_json, train_imgs)
