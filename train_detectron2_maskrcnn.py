@@ -21,6 +21,28 @@ def main():
     batch_size = 2
     max_iter = 3000  # adjust for your dataset
 
+    # --- Correction automatique des fichiers COCO pour éviter KeyError: 'info' ---
+    def ensure_coco_info_and_licenses(json_path):
+        with open(json_path, 'r', encoding='utf-8') as f:
+            coco_data = json.load(f)
+        changed = False
+        if 'info' not in coco_data:
+            coco_data['info'] = {
+                "description": "Auto-added info for COCO file",
+                "version": "1.0",
+                "year": 2025
+            }
+            changed = True
+        if 'licenses' not in coco_data:
+            coco_data['licenses'] = []
+            changed = True
+        if changed:
+            with open(json_path, 'w', encoding='utf-8') as f:
+                json.dump(coco_data, f, indent=2, ensure_ascii=False)
+
+    ensure_coco_info_and_licenses(train_json)
+    ensure_coco_info_and_licenses(val_json)
+
     # Calcul et affichage du nombre d'epochs
     with open(train_json, 'r') as f:
         coco = json.load(f)
