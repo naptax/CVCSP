@@ -22,10 +22,11 @@ def main():
     max_iter = 3000  # adjust for your dataset
 
     # --- Correction automatique des fichiers COCO pour éviter KeyError: 'info' ---
-    def ensure_coco_info_and_licenses(json_path):
+    def ensure_coco_info_licenses_area(json_path):
         with open(json_path, 'r', encoding='utf-8') as f:
             coco_data = json.load(f)
         changed = False
+        # Ajout info/licenses si absents
         if 'info' not in coco_data:
             coco_data['info'] = {
                 "description": "Auto-added info for COCO file",
@@ -36,12 +37,25 @@ def main():
         if 'licenses' not in coco_data:
             coco_data['licenses'] = []
             changed = True
+        # Correction automatique de la clé 'area' dans chaque annotation
+        for ann in coco_data.get('annotations', []):
+            if 'area' not in ann or ann['area'] in [None, 0]:
+                # Calcul à partir du bbox si disponible
+                if 'bbox' in ann and len(ann['bbox']) == 4:
+                    _, _, w, h = ann['bbox']
+                    area = float(w) * float(h)
+                    ann['area'] = area
+                    changed = True
+                # Sinon, on laisse à 1 (valeur minimale pour éviter l'erreur, mais à corriger manuellement si segmentation complexe)
+                else:
+                    ann['area'] = 1.0
+                    changed = True
         if changed:
             with open(json_path, 'w', encoding='utf-8') as f:
                 json.dump(coco_data, f, indent=2, ensure_ascii=False)
 
-    ensure_coco_info_and_licenses(train_json)
-    ensure_coco_info_and_licenses(val_json)
+    ensure_coco_info_licenses_area(train_json)
+    ensure_coco_info_licenses_area(val_json)
 
     # Calcul et affichage du nombre d'epochs
     with open(train_json, 'r') as f:
