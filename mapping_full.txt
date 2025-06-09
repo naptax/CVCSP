@@ -1,0 +1,130 @@
+119 images PNG et 122 SVG trouvés dans dataset/.
+[OK] IIa_MN0605_gt_2.svg associé à IIa_MN0605.png
+[OK] 5_gt_9.svg associé à 5.png
+[OK] IIa_LI0801_gt_3.svg associé à IIa_LI0801.png
+[OK] Ic_DE0901_sommaire_gt_6.svg associé à Ic_DE0901_sommaire.png
+[OK] IIa_TB0401_gt_5.svg associé à IIa_TB0401.png
+[OK] IIa_TD0810_gt_6.svg associé à IIa_TD0810.png
+[OK] IIa_TC0401_gt_5.svg associé à IIa_TC0401.png
+[OK] IId_AE0602_gt_3.svg associé à IId_AE0602.png
+[OK] Ia_TD0801_sommaire_gt_5.svg associé à Ia_TD0801_sommaire.png
+[OK] image024_gt_2.svg associé à image024.png
+[OK] IIa_FE0901_gt_7.svg associé à IIa_FE0901.png
+[OK] image003_gt_3.svg associé à image003.png
+[OK] Ib_CU1001_sommaire_gt_3.svg associé à Ib_CU1001_sommaire.png
+[OK] image022_gt_2.svg associé à image022.png
+[OK] IIa_BK0701_gt_6.svg associé à IIa_BK0701.png
+[OK] IIa_A01001_gt_3.svg associé à IIa_A01001.png
+[OK] Ib_LD0601_sommaire_gt_5.svg associé à Ib_LD0601_sommaire.png
+[OK] IIa_MN0610_gt_3.svg associé à IIa_MN0610.png
+[OK] Ic_MT0601_sommaire_gt_4.svg associé à Ic_MT0601_sommaire.png
+[OK] Ia_DE1101_sommaire_gt_6.svg associé à Ia_DE1101_sommaire.png
+[OK] IIa_GY0410_gt_3.svg associé à IIa_GY0410.png
+[OK] image014_gt_2.svg associé à image014.png
+[OK] IIa_GC0802_gt_2.svg associé à IIa_GC0802.png
+[OK] IId_VO0701_gt_8.svg associé à IId_VO0701.png
+[OK] IIa_BA0710_gt_3.svg associé à IIa_BA0710.png
+[OK] IIa_GT0501_gt_2.svg associé à IIa_GT0501.png
+[OK] Ib_LT0702_sommaire_gt_5.svg associé à Ib_LT0702_sommaire.png
+[OK] IIa_GZ0501_gt_2.svg associé à IIa_GZ0501.png
+[OK] IId_LA0401_gt_5.svg associé à IId_LA0401.png
+[OK] Ib_BN1701_sommaire_gt_7.svg associé à Ib_BN1701_sommaire.png
+[OK] Ic_MU0703_sommaire_gt_8.svg associé à Ic_MU0703_sommaire.png
+[OK] IId_OZ0501_gt_3.svg associé à IId_OZ0501.png
+[OK] IIb_GY0502_gt_2.svg associé à IIb_GY0502.png
+[OK] IIa_SR1101_gt_8.svg associé à IIa_SR1101.png
+[OK] IIa_CN0603_gt_5.svg associé à IIa_CN0603.png
+[OK] Ib_CT0601_sommaire_gt_3.svg associé à Ib_CT0601_sommaire.png
+[WARN] Aucun PNG trouvé pour p2_gt_3.svg (attendu : p2.png)
+[OK] IIa_LE0803_gt_3.svg associé à IIa_LE0803.png
+[OK] 7_gt_6.svg associé à 7.png
+[OK] IIc_BI0901_gt_2.svg associé à IIc_BI0901.png
+[OK] image028_gt_2.svg associé à image028.png
+[OK] IIa_CS0803_gt_8.svg associé à IIa_CS0803.png
+[OK] Ia_JN0701_sommaire_gt_8.svg associé à Ia_JN0701_sommaire.png
+[OK] Ic_RE0503_sommaire_gt_7.svg associé à Ic_RE0503_sommaire.png
+[OK] Ic_JN0702_sommaire_gt_3.svg associé à Ic_JN0702_sommaire.png
+[OK] IIa_SL0801_gt_2.svg associé à IIa_SL0801.png
+[OK] image025_gt_2.svg associé à image025.png
+[OK] Ia_GO0601_sommaire_gt_8.svg associé à Ia_GO0601_sommaire.png
+[OK] 4_gt_7.svg associé à 4.png
+[OK] 8_gt_7.svg associé à 8.png
+[OK] Ib_RI0501_sommaire_gt_5.svg associé à Ib_RI0501_sommaire.png
+[OK] 3_gt_12.svg associé à 3.png
+[OK] IIa_MN0601_gt_3.svg associé à IIa_MN0601.png
+[OK] IIa_LZ1101_gt_2.svg associé à IIa_LZ1101.png
+[OK] IIa_BN0802_gt_2.svg associé à IIa_BN0802.png
+[OK] IIa_BS0601_gt_2.svg associé à IIa_BS0601.png
+[OK] IIa_NS0701_gt_5.svg associé à IIa_NS0701.png
+[OK] 10_gt_9.svg associé à 10.png
+[OK] IIa_CA0701_gt_6.svg associé à IIa_CA0701.png
+[WARN] Aucun PNG trouvé pour p4_gt_3.svg (attendu : p4.png)
+[OK] IIa_BN0820_gt_5.svg associé à IIa_BN0820.png
+[OK] Ia_LS0701_sommaire_gt_5.svg associé à Ia_LS0701_sommaire.png
+[OK] IIa_GC1202_gt_4.svg associé à IIa_GC1202.png
+[WARN] Aucun PNG trouvé pour p3_gt_3.svg (attendu : p3.png)
+[OK] IIa_DL0701_gt_6.svg associé à IIa_DL0701.png
+[OK] IIa_GC0801_gt_10.svg associé à IIa_GC0801.png
+[OK] IIa_GZ0520_gt_4.svg associé à IIa_GZ0520.png
+[OK] Ia_BN0601_sommaire_gt_7.svg associé à Ia_BN0601_sommaire.png
+[OK] image023_gt_2.svg associé à image023.png
+[OK] image021_gt_2.svg associé à image021.png
+[OK] image030_gt_2.svg associé à image030.png
+[OK] 9_gt_5.svg associé à 9.png
+[OK] image002_gt_7.svg associé à image002.png
+[OK] IIb_CS0801_gt_5.svg associé à IIb_CS0801.png
+[OK] Ib_AE0601_sommaire_gt_5.svg associé à Ib_AE0601_sommaire.png
+[OK] Ic_RD0602_sommaire_gt_4.svg associé à Ic_RD0602_sommaire.png
+[OK] 6_gt_6.svg associé à 6.png
+[OK] IId_AD0801_gt_2.svg associé à IId_AD0801.png
+[OK] 2_gt_16.svg associé à 2.png
+[OK] IIa_OO0401_gt_6.svg associé à IIa_OO0401.png
+[OK] image008_gt_3.svg associé à image008.png
+[OK] IIc_UO0701_gt_2.svg associé à IIc_UO0701.png
+[OK] IId_GI0601_gt_5.svg associé à IId_GI0601.png
+[OK] IId_PN0603_gt_6.svg associé à IId_PN0603.png
+[OK] Ic_CI1001_sommaire_gt_6.svg associé à Ic_CI1001_sommaire.png
+[OK] Ia_DS0801_sommaire_gt_14.svg associé à Ia_DS0801_sommaire.png
+[WARN] Aucun PNG trouvé pour p1_gt_5.svg (attendu : p1.png)
+[OK] image006_gt_2.svg associé à image006.png
+[OK] IIa_DE1110_gt_6.svg associé à IIa_DE1110.png
+[OK] Ia_MR0601_sommaire_gt_6.svg associé à Ia_MR0601_sommaire.png
+[OK] IIa_AP3301_gt_5.svg associé à IIa_AP3301.png
+[OK] Ic_KI0501_sommaire_gt_3.svg associé à Ic_KI0501_sommaire.png
+[OK] image026_gt_2.svg associé à image026.png
+[OK] IIa_GL0401_gt_4.svg associé à IIa_GL0401.png
+[OK] Ic_CA0501_sommaire_gt_3.svg associé à Ic_CA0501_sommaire.png
+[OK] Ib_PR0901_sommaire_gt_3.svg associé à Ib_PR0901_sommaire.png
+[OK] IIa_TZ0601_gt_2.svg associé à IIa_TZ0601.png
+[OK] image005_gt_4.svg associé à image005.png
+[OK] IIc_RE0701_gt_2.svg associé à IIc_RE0701.png
+[OK] Ic_AA1001_sommaire_gt_5.svg associé à Ic_AA1001_sommaire.png
+[OK] Ib_GY0301_sommaire_gt_10.svg associé à Ib_GY0301_sommaire.png
+[OK] Ia_AP2022_sommaire_gt_9.svg associé à Ia_AP2022_sommaire.png
+[OK] IId_BA0702_gt_3.svg associé à IId_BA0702.png
+[OK] IIb_DD0601_gt_5.svg associé à IIb_DD0601.png
+[OK] Ib_JR0801_sommaire_gt_4.svg associé à Ib_JR0801_sommaire.png
+[OK] IId_HT0601_gt_6.svg associé à IId_HT0601.png
+[OK] IIa_SR1102_gt_5.svg associé à IIa_SR1102.png
+[OK] image029_gt_3.svg associé à image029.png
+[OK] IIa_BN0803_gt_3.svg associé à IIa_BN0803.png
+[OK] Ia_GY0401_sommaire_gt_9.svg associé à Ia_GY0401_sommaire.png
+[OK] IIa_AP3601_gt_4.svg associé à IIa_AP3601.png
+[OK] 1_gt_14.svg associé à 1.png
+[OK] IIb_FZ0901_gt_2.svg associé à IIb_FZ0901.png
+[OK] IIb_MN0702_gt_7.svg associé à IIb_MN0702.png
+[OK] IIa_AP3401_gt_5.svg associé à IIa_AP3401.png
+[OK] image001_gt_11.svg associé à image001.png
+[OK] image007_gt_2.svg associé à image007.png
+[OK] IIa_GT0602_gt_2.svg associé à IIa_GT0602.png
+[OK] IId_PL0720_gt_5.svg associé à IId_PL0720.png
+[OK] image027_gt_2.svg associé à image027.png
+[OK] IId_CT0401_gt_3.svg associé à IId_CT0401.png
+[OK] IIa_BK0703_gt_5.svg associé à IIa_BK0703.png
+118 images gardées (avec PNG associé par règle alphabétique).
+4 images ignorées (PNG manquant) : ['p2_gt_3.svg', 'p4_gt_3.svg', 'p3_gt_3.svg', 'p1_gt_5.svg']
+118 images gardées (avec PNG correspondant).
+4 images ignorées (PNG manquant) : ['p2_gt_3.svg', 'p4_gt_3.svg', 'p3_gt_3.svg', 'p1_gt_5.svg']
+9537 annotations gardées.
+Fichier train écrit : /dev/null (94 images, 7647 annotations)
+Fichier val écrit : /dev/null (24 images, 1890 annotations)
