@@ -98,11 +98,11 @@ def main():
             class_name = poly['class']
             class_count[class_name] += 1
             all_classes.add(class_name)
-            # On mappe la classe à un id plus tard
             annotations.append({
                 'id': annotation_id,
                 'image_id': image_id,
                 'category_id': None,  # Rempli après
+                'class_name': class_name,  # Stock temporaire
                 'segmentation': polygon_to_coco_segmentation(poly['points']),
                 'bbox': polygon_to_bbox(poly['points']),
                 'iscrowd': 0
@@ -119,19 +119,11 @@ def main():
     for cname, count in class_count.items():
         print(f"  {cname}: {count}")
 
-    # Remplir les category_id
+    # Remplir les category_id correctement selon la vraie classe
     for ann in annotations:
-        # Si la classe n'existe pas, on met à 0 (fond)
-        # (Ici, on suppose que la classe est dans all_classes)
-        # Pour robustesse, on peut lever une erreur sinon
-        seg = ann['segmentation'][0]
-        # On retrouve la classe à partir du polygone (pas optimal mais robuste)
-        for cname in class_name_to_id:
-            if class_count[cname] > 0:
-                ann['category_id'] = class_name_to_id[cname]
-                break
-        if ann['category_id'] is None:
-            ann['category_id'] = 0
+        cname = ann['class_name']
+        ann['category_id'] = class_name_to_id.get(cname, 0)
+        del ann['class_name']  # Nettoyage
 
     # Générer la liste des catégories COCO
     categories = [
@@ -147,6 +139,14 @@ def main():
     with open(args.output, 'w', encoding='utf-8') as f:
         json.dump(coco, f, indent=2)
     print(f"Annotations COCO sauvegardées dans {args.output}")
+
+    # Affichage du dénombrement des catégories dans le COCO généré
+    from collections import Counter
+    counts = Counter(ann['category_id'] for ann in coco['annotations'])
+    print("\nDénombrement des catégories dans le COCO généré :")
+    for cat in coco['categories']:
+        print(f"  {cat['name']} (id={cat['id']}) : {counts.get(cat['id'], 0)}")
+
 
 if __name__ == '__main__':
     main()
