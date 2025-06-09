@@ -60,6 +60,17 @@ def main():
     # Garder uniquement les annotations liées aux images conservées
     kept_image_ids = set(img['id'] for img in kept_images)
     kept_annotations = [ann for ann in coco['annotations'] if ann['image_id'] in kept_image_ids]
+
+    # Ajouter width/height à chaque image
+    from PIL import Image
+    for img in kept_images:
+        img_path = os.path.join(args.img_dir, img['file_name'])
+        try:
+            with Image.open(img_path) as im:
+                img['width'], img['height'] = im.size
+        except Exception as e:
+            print(f"[WARN] Impossible d'obtenir width/height pour {img['file_name']}: {e}")
+
     print(f"{len(kept_images)} images gardées (avec PNG correspondant).")
     print(f"{len(kept_annotations)} annotations gardées.")
 
